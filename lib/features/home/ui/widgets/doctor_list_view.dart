@@ -10,13 +10,13 @@ class DoctorListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<String> images = [
-      "assets/images/8.jpg", 
-      "assets/images/6.jpg", 
-      "assets/images/download44.png", 
-      "assets/images/7.jpg", 
-      "assets/images/download.png", 
-      "assets/images/4.jpg", 
-      "assets/images/5.jpg", 
+      "assets/images/8.jpg",
+      "assets/images/6.jpg",
+      "assets/images/download44.png",
+      "assets/images/7.jpg",
+      "assets/images/download.png",
+      "assets/images/4.jpg",
+      "assets/images/5.jpg",
       "assets/images/download1.jpg",
       "assets/images/download22.jpg",
       "assets/images/download33.png"
@@ -32,7 +32,7 @@ class DoctorListView extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 34,
-                  backgroundColor: Color.fromARGB(255, 250, 250, 255),
+                  backgroundColor: Color.fromARGB(255, 247, 253, 255),
                   child: Image.asset(
                     images[i],
                     fit: BoxFit.fill,
