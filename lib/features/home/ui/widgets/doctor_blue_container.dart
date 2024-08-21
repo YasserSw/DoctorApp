@@ -55,7 +55,7 @@ class DoctorBlueContainer extends StatelessWidget {
             left: 200,
             right: 0,
             height: 190.h,
-            bottom: 11.h,
+            bottom: 1.9.h,
           ),
         ],
         clipBehavior: Clip.none,

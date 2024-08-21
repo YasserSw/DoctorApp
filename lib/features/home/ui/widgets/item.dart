@@ -35,30 +35,39 @@ class Item extends StatelessWidget {
                     doctors?.photo ?? "assets/images/Image.png",
                     fit: BoxFit.scaleDown,
                   )),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    doctors?.name ?? "Doc",
-                    style: Textstyles.font14DarkBlueBold
-                        .copyWith(overflow: TextOverflow.ellipsis),
-                  ),
-                  verticalSpacing(9),
-                  Text(doctors?.degree ?? "Doc"),
-                  verticalSpacing(9),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text(doctors?.email ?? "DocEmail"),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      doctors?.name ?? "Doc",
+                      style: Textstyles.font14DarkBlueBold
+                          .copyWith(overflow: TextOverflow.ellipsis),
+                    ),
+                    verticalSpacing(9),
+                    Text(doctors?.degree ?? "Doc"),
+                    verticalSpacing(9),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text(
+                          maxLines: 1,
+                          doctors?.email ?? "DocEmail",
+                          style: Textstyles.font12BlueRegular.copyWith(
+                            fontSize: 11.5.sp,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
 
-                      // Text("RATING"),
-                    ],
-                  ),
-                  verticalSpacing(10),
-                  Text(doctors?.phone ?? "DocEmail"),
-                ],
+                        // Text("RATING"),
+                      ],
+                    ),
+                    verticalSpacing(10),
+                    Text(doctors?.phone ?? "DocEmail"),
+                  ],
+                ),
               )
             ],
           ),

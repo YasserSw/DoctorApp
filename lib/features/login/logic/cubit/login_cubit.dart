@@ -24,7 +24,7 @@ class LoginCubit extends Cubit<LoginState> {
     emit(LoginState.loading());
     final response = await loginRepo.login(loginRequestBody);
     response.when(success: (LoginResponse) async {
-          await saveUserToken(LoginResponse.userData?.token ?? '');
+           await saveUserToken(LoginResponse.userData?.token ?? '');
 
       emit(LoginState.success(LoginResponse));
     }, failure: (error) {
