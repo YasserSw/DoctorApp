@@ -5,9 +5,7 @@ import 'package:doctor_application_2/features/signup/logic/sign_up_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-
 import '../../../../core/routing/routes.dart';
-
 
 class SignupBlocListener extends StatelessWidget {
   const SignupBlocListener({super.key});
@@ -60,7 +58,9 @@ class SignupBlocListener extends StatelessWidget {
           actions: <Widget>[
             TextButton(
               style: TextButton.styleFrom(
-                foregroundColor: Colors.white, backgroundColor: Colors.blue, disabledForegroundColor: Colors.grey.withOpacity(0.38),
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.blue,
+                disabledForegroundColor: Colors.grey.withOpacity(0.38),
               ),
               onPressed: () {
                 Navigator.of(context).pushNamed(Routes.loginScreen);
@@ -74,7 +74,7 @@ class SignupBlocListener extends StatelessWidget {
   }
 
   void setupErrorState(BuildContext context, String error) {
-     Navigator.of(context).pop();
+    Navigator.of(context).pop();
     showDialog(
       context: context,
       builder: (context) => AlertDialog(

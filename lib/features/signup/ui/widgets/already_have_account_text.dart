@@ -2,9 +2,7 @@ import 'package:doctor_application_2/core/themeing/textstyles.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-
 import '../../../../core/routing/routes.dart';
-
 
 class AlreadyHaveAccountText extends StatelessWidget {
   const AlreadyHaveAccountText({super.key});

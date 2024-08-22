@@ -7,7 +7,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 import '../../../core/widgets/app_text_button.dart';
 import '../../login/ui/widgets/terms_and_conditions_text.dart';
 import '../logic/sign_up_cubit.dart';

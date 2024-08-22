@@ -3,7 +3,6 @@ import 'package:doctor_application_2/core/themeing/color_manager.dart';
 import 'package:doctor_application_2/core/themeing/textstyles.dart';
 import 'package:flutter/material.dart';
 
-
 class PasswordValidations extends StatelessWidget {
   final bool hasLowerCase;
   final bool hasUpperCase;

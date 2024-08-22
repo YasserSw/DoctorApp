@@ -3,7 +3,6 @@ import 'package:doctor_application_2/features/signup/logic/sign_up_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-
 import '../data/models/sign_up_request_body.dart';
 
 class SignupCubit extends Cubit<SignupState> {

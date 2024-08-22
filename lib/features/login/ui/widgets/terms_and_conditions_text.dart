@@ -1,7 +1,6 @@
 import 'package:doctor_application_2/core/themeing/textstyles.dart';
 import 'package:flutter/material.dart';
 
-
 class TermsAndConditionsText extends StatelessWidget {
   const TermsAndConditionsText({super.key});
 
