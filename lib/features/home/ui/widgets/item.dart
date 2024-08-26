@@ -55,17 +55,14 @@ class Item extends StatelessWidget {
                         Text(
                           maxLines: 1,
                           doctors?.email ?? "DocEmail",
-                          style: Textstyles.font12BlueRegular.copyWith(
-                            fontSize: 11.5.sp,
-                            overflow: TextOverflow.ellipsis,
-                          ),
+                          style: Textstyles.font12BlueRegular
+                              .copyWith(fontSize: 10.8),
                         ),
-
-                        // Text("RATING"),
                       ],
                     ),
                     verticalSpacing(10),
                     Text(doctors?.phone ?? "DocEmail"),
+                    Text(doctors?.price.toString() ?? "1000")
                   ],
                 ),
               )

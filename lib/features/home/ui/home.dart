@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
-          physics: BouncingScrollPhysics(),
+          physics: AlwaysScrollableScrollPhysics(),
           child: Container(
             width: double.infinity,
             margin: EdgeInsets.fromLTRB(20, 16, 20, 28),
@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
               HomeTopBar(),
               verticalSpacing(50),
               Center(child: DoctorBlueContainer()),
-              verticalSpacing(40),
+              verticalSpacing(10),
               DoctorText(),
               verticalSpacing(20),
               SpecialBlocbuilder(),

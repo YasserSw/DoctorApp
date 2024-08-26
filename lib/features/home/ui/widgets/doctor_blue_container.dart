@@ -42,8 +42,8 @@ class DoctorBlueContainer extends StatelessWidget {
                         color: Color.fromARGB(255, 61, 60, 133), fontSize: 14),
                   ),
                 ),
-                highlightColor: ColorManager.moreDarkBlue,
-                splashColor: ColorManager.moreDarkBlue,
+                highlightColor: Color.fromARGB(255, 130, 129, 189),
+                splashColor: Color.fromARGB(255, 130, 129, 189),
               )),
           Positioned(
             child: Container(

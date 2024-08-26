@@ -22,7 +22,7 @@ class DocApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (_, child) {
         return MaterialApp(
-          initialRoute: isLoggedInUser ? Routes.homeScreen : Routes.loginScreen,
+          initialRoute: isLoggedInUser ? Routes.homeScreen : Routes.onBoardingScreen,
           onGenerateRoute: approuter.generateRoute,
           theme: ThemeData(
               primaryColor: ColorManager.mainBlue,

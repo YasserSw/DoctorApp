@@ -6,7 +6,7 @@ import 'package:doctor_application_2/features/home/ui/widgets/doctors_shimmer_lo
 
 import 'package:doctor_application_2/features/home/ui/widgets/speciality_shimmer_loading.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/rendering/box.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,9 +23,16 @@ class SpecialBlocbuilder extends StatelessWidget {
       builder: (context, state) {
         return state.maybeWhen(
           specializationsLoading: () {
-            return SizedBox(height: 290.h,child: Column(children: [   SpecialityShimmerLoading(),
-                verticalSpacing(18),
-                 DoctorsShimmerLoading(),],),);
+            return SizedBox(
+              height: 2000.h,
+              child: Column(
+                children: [
+                  SpecialityShimmerLoading(),
+                  verticalSpacing(30),
+                  DoctorsShimmerLoading(),
+                ],
+              ),
+            );
           },
           specializationsError: (errorHandler) {
             return SizedBox.shrink();
